@@ -13,7 +13,15 @@ import {animate, style, transition, trigger} from "@angular/animations";
               'opacity-0 scale-95': !isModalOpen
             }"
            (click)="onModalClick($event)">
-        <pdf-viewer [src]="data.pdfSrc" style="width: 100%; height: 500px;"></pdf-viewer>
+        <ngx-extended-pdf-viewer
+          [src]="data.pdfSrc"
+          [height]="'100%'"
+          [zoom]="'auto'"
+          [showDownloadButton]="false"
+          [showOpenFileButton]="false"
+          [showPrintButton]="false"
+          backgroundColor="#ffffff">
+        </ngx-extended-pdf-viewer>
       </div>
     </div>
   `,

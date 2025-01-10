@@ -35,6 +35,11 @@
                 "glob": "**/*",
                 "input": "src/assets/img",
                 "output": "/assets/img"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-extended-pdf-viewer/assets/",
+                "output": "/assets/"
               }
             ],
             "styles": [

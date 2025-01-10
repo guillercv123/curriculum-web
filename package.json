@@ -23,7 +23,6 @@
     "@angular/router": "^18.2.0",
     "framer-motion": "^11.16.4",
     "motion": "^11.16.4",
-    "ng2-pdf-viewer": "^10.4.0",
     "ngx-extended-pdf-viewer": "^22.2.0-alpha.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

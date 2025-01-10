@@ -8,11 +8,10 @@ import {ExperienceComponent} from "../components/experience/experience.component
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MouseBackgroundDirective} from "../directive/mouse-background.directive";
-import {PdfViewerModule} from "ng2-pdf-viewer";
 import {MatDialogModule} from "@angular/material/dialog";
 import {PdfModalComponent} from "../common/pdf-modal-component/pdf-modal-component.component";
-import {NgxExtendedPdfViewerModule} from "ngx-extended-pdf-viewer";
 import {MyProjectsComponent} from "../components/my-projects/my-projects.component";
+import {NgxExtendedPdfViewerModule} from "ngx-extended-pdf-viewer";
 
 @NgModule({
   declarations: [
@@ -30,9 +29,8 @@ import {MyProjectsComponent} from "../components/my-projects/my-projects.compone
     NgxExtendedPdfViewerModule,
     CommonModule,
     RouterOutlet,
-    PdfViewerModule,
     NgOptimizedImage,
-    MatDialogModule
+    MatDialogModule,
   ],
   bootstrap: [AppComponent],
 })
