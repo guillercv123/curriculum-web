@@ -15,14 +15,14 @@ import {animate, style, transition, trigger} from "@angular/animations";
            (click)="onModalClick($event)">
         <ngx-extended-pdf-viewer
           [src]="data.pdfSrc"
-          [height]="'100%'"
+          [height]="'500px'"
           [zoom]="'auto'"
           [showToolbar]="true"
           [showSecondaryToolbarButton] ="false"
           [showSidebarButton]="false"
           [showFindButton]="false"
           [showPagingButtons]="false"
-          [showZoomButtons]="false"
+          [showZoomButtons]="true"
           [showPresentationModeButton]="false"
           [showPrintButton]="false"
           [showOpenFileButton] = "false"
