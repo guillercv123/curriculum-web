@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {AppComponent} from "./app.component";
 import {RouterOutlet} from "@angular/router";
 import {NavBarComponent} from "../components/nav-bar/nav-bar.component";
@@ -8,6 +8,11 @@ import {ExperienceComponent} from "../components/experience/experience.component
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MouseBackgroundDirective} from "../directive/mouse-background.directive";
+import {PdfViewerModule} from "ng2-pdf-viewer";
+import {MatDialogModule} from "@angular/material/dialog";
+import {PdfModalComponent} from "../common/pdf-modal-component/pdf-modal-component.component";
+import {NgxExtendedPdfViewerModule} from "ngx-extended-pdf-viewer";
+import {MyProjectsComponent} from "../components/my-projects/my-projects.component";
 
 @NgModule({
   declarations: [
@@ -15,13 +20,19 @@ import {MouseBackgroundDirective} from "../directive/mouse-background.directive"
     NavBarComponent,
     AboutComponent,
     ExperienceComponent,
-    MouseBackgroundDirective
+    MouseBackgroundDirective,
+    PdfModalComponent,
+    MyProjectsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NgxExtendedPdfViewerModule,
     CommonModule,
     RouterOutlet,
+    PdfViewerModule,
+    NgOptimizedImage,
+    MatDialogModule
   ],
   bootstrap: [AppComponent],
 })

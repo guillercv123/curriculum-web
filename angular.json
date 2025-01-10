@@ -25,6 +25,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/pdf",
+                "output": "/assets/pdf"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/img",
+                "output": "/assets/img"
               }
             ],
             "styles": [
