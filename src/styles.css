@@ -16,6 +16,7 @@
 }
 
 body {
+  font-family: 'Mulish', serif;
   margin: 0;
   background: var(--bg-color);
   color: var(--text-color);
