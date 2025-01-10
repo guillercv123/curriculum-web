@@ -1,0 +1,11 @@
+.nav {
+  position: relative;
+}
+
+.group {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-indicator {
+  transition: all 0.3s ease-in-out;
+}

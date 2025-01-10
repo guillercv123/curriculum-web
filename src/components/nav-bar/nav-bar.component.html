@@ -1,0 +1,82 @@
+<nav class="nav hidden lg:block" aria-label="In-page jump links">
+  <ul class="mt-16 w-max">
+    <li>
+      <a
+        class="group flex items-center py-3"
+        [ngClass]="{
+          'text-slate-200': activeSection === '#about' || hoveredSection === '#about',
+          'text-slate-500': activeSection !== '#about' && hoveredSection !== '#about'
+        }"
+        href="#about"
+        (click)="handleScroll($event, '#about')"
+        (mouseenter)="hoveredSection = '#about'"
+        (mouseleave)="hoveredSection = ''"
+        [@hoverEffect]="hoveredSection === '#about' ? 'hover' : 'default'"
+        [@clickEffect]="activeSection === '#about' ? 'clicked' : 'default'"
+      >
+        <span
+          class="nav-indicator mr-4 h-px w-8"
+          [ngClass]="{
+            'bg-slate-200': activeSection === '#about' || hoveredSection === '#about',
+            'bg-slate-600': activeSection !== '#about' && hoveredSection !== '#about'
+          }"
+        ></span>
+        <span class="nav-text text-xs font-bold uppercase tracking-widest">
+          Acerca de mí
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="group flex items-center py-3"
+        [ngClass]="{
+          'text-slate-200': activeSection === '#experience' || hoveredSection === '#experience',
+          'text-slate-500': activeSection !== '#experience' && hoveredSection !== '#experience'
+        }"
+        href="#experience"
+        (click)="handleScroll($event, '#experience')"
+        (mouseenter)="hoveredSection = '#experience'"
+        (mouseleave)="hoveredSection = ''"
+        [@hoverEffect]="hoveredSection === '#experience' ? 'hover' : 'default'"
+        [@clickEffect]="activeSection === '#experience' ? 'clicked' : 'default'"
+      >
+        <span
+          class="nav-indicator mr-4 h-px w-8"
+          [ngClass]="{
+            'bg-slate-200': activeSection === '#experience' || hoveredSection === '#experience',
+            'bg-slate-600': activeSection !== '#experience' && hoveredSection !== '#experience'
+          }"
+        ></span>
+        <span class="nav-text text-xs font-bold uppercase tracking-widest">
+          Experiencia Laboral
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="group flex items-center py-3"
+        [ngClass]="{
+          'text-slate-200': activeSection === '#projects' || hoveredSection === '#projects',
+          'text-slate-500': activeSection !== '#projects' && hoveredSection !== '#projects'
+        }"
+        href="#projects"
+        (click)="handleScroll($event, '#projects')"
+        (mouseenter)="hoveredSection = '#projects'"
+        (mouseleave)="hoveredSection = ''"
+        [@hoverEffect]="hoveredSection === '#projects' ? 'hover' : 'default'"
+        [@clickEffect]="activeSection === '#projects' ? 'clicked' : 'default'"
+      >
+        <span
+          class="nav-indicator mr-4 h-px w-8"
+          [ngClass]="{
+            'bg-slate-200': activeSection === '#projects' || hoveredSection === '#projects',
+            'bg-slate-600': activeSection !== '#projects' && hoveredSection !== '#projects'
+          }"
+        ></span>
+        <span class="nav-text text-xs font-bold uppercase tracking-widest">
+          Proyectos
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
