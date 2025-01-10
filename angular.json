@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portafolio-web",
+            "outputPath": "dist/curriculum-web",
             "index": "src/index.html",
             "baseHref": "/curriculum-web/",
             "browser": "src/main.ts",
