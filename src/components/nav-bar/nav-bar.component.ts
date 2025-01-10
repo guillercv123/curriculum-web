@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
@@ -27,7 +27,23 @@ export class NavBarComponent {
     const target = document.querySelector(section);
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      this.activeSection = section; // Actualiza la sección activa
+      this.activeSection = section;
     }
   }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const sections = ['#about', '#experience', '#projects'];
+
+    sections.forEach((section) => {
+      const element = document.querySelector(section);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom >= 0) {
+          this.activeSection = section;
+        }
+      }
+    });
+  }
+
 }

@@ -17,9 +17,16 @@ import {animate, style, transition, trigger} from "@angular/animations";
           [src]="data.pdfSrc"
           [height]="'100%'"
           [zoom]="'auto'"
-          [showDownloadButton]="false"
-          [showOpenFileButton]="false"
+          [showToolbar]="true"
+          [showSecondaryToolbarButton] ="false"
+          [showSidebarButton]="false"
+          [showFindButton]="false"
+          [showPagingButtons]="false"
+          [showZoomButtons]="false"
+          [showPresentationModeButton]="false"
           [showPrintButton]="false"
+          [showOpenFileButton] = "false"
+          [showDownloadButton]="true"
           backgroundColor="#ffffff">
         </ngx-extended-pdf-viewer>
       </div>
